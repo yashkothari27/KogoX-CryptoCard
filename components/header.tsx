@@ -14,8 +14,8 @@ export function Header() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl bg-white/95 flex items-center justify-center shadow-sm shadow-cyan-500/10 overflow-hidden">
-              <Image src="/kogo-logo.svg" alt="KogoX" width={40} height={40} priority />
+            <div className="w-10 h-10 rounded-xl flex items-center justify-center shadow-sm shadow-primary/10 overflow-hidden">
+              <Image src="/kogo-logo.png" alt="KogoX" width={40} height={40} priority />
             </div>
             <span className="text-xl font-bold text-foreground">
               Kogo<span className="gradient-text">X</span>
@@ -40,7 +40,7 @@ export function Header() {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="bg-gradient-to-r from-cyan-400 to-blue-600 hover:from-cyan-300 hover:to-blue-500 text-white px-6">
+            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 px-6">
               Get Your KogoX Crypto Card
             </Button>
           </div>
@@ -71,7 +71,7 @@ export function Header() {
               <a href="#partners" className="text-muted-foreground hover:text-foreground transition-colors">
                 Partners
               </a>
-              <Button className="bg-gradient-to-r from-cyan-400 to-blue-600 hover:from-cyan-300 hover:to-blue-500 text-white w-full mt-2">
+              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 w-full mt-2">
                 Get Your KogoX Crypto Card
               </Button>
             </nav>

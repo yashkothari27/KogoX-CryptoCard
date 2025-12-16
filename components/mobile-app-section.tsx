@@ -16,8 +16,8 @@ export function MobileAppSection() {
     <section id="app" className="py-20 lg:py-32 bg-secondary/30 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-0 left-1/4 w-64 h-64 bg-cyan-400/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-violet-500/10 rounded-full blur-3xl" />
+        <div className="absolute top-0 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-primary/6 rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
@@ -37,7 +37,7 @@ export function MobileAppSection() {
                   {/* App Content */}
                   <div className="p-4 space-y-4">
                     {/* Balance Card */}
-                    <div className="bg-gradient-to-br from-cyan-400 to-blue-600 rounded-2xl p-4 text-white">
+                    <div className="bg-gradient-to-br from-primary to-[#8a6b1f] rounded-2xl p-4 text-white">
                       <div className="text-xs opacity-80">Available Balance</div>
                       <div className="text-2xl font-bold">$12,458.00</div>
                       <div className="text-xs opacity-80 mt-1">≈ 0.4523 BTC</div>
@@ -48,7 +48,7 @@ export function MobileAppSection() {
                       {["Cards", "Limits", "Settings"].map((action) => (
                         <div key={action} className="bg-card rounded-xl p-3 text-center border border-border">
                           <div className="w-8 h-8 mx-auto mb-1 rounded-lg bg-secondary flex items-center justify-center">
-                            <div className="w-3 h-3 rounded bg-cyan-400" />
+                            <div className="w-3 h-3 rounded bg-primary" />
                           </div>
                           <span className="text-xs text-muted-foreground">{action}</span>
                         </div>
@@ -87,7 +87,7 @@ export function MobileAppSection() {
           {/* Content */}
           <div className="order-1 lg:order-2">
             <ScrollReveal>
-              <span className="text-cyan-300 font-medium text-sm uppercase tracking-wider">Mobile App</span>
+              <span className="text-primary/90 font-medium text-sm uppercase tracking-wider">Mobile App</span>
             </ScrollReveal>
             <ScrollReveal delayMs={80}>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-4 mb-6 text-balance">
@@ -105,8 +105,8 @@ export function MobileAppSection() {
             <ul className="space-y-4 mb-10">
               {appFeatures.map((feature, index) => (
                 <li key={index} className="flex items-center gap-3">
-                  <div className="w-6 h-6 rounded-full bg-cyan-400/15 flex items-center justify-center shrink-0 border border-white/5">
-                    <Check className="w-4 h-4 text-cyan-300" />
+                  <div className="w-6 h-6 rounded-full bg-primary/15 flex items-center justify-center shrink-0 border border-white/5">
+                    <Check className="w-4 h-4 text-primary" />
                   </div>
                   <span className="text-foreground">{feature}</span>
                 </li>
@@ -114,10 +114,7 @@ export function MobileAppSection() {
             </ul>
 
             <div className="flex flex-wrap gap-4">
-              <Button
-                size="lg"
-                className="bg-gradient-to-r from-cyan-400 to-blue-600 hover:from-cyan-300 hover:to-blue-500 text-white"
-              >
+              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
                 Get the App
               </Button>
               <Button

@@ -11,16 +11,16 @@ export default function KogoPayPage() {
     <main className="min-h-screen bg-background">
       <div className="relative min-h-screen flex items-center justify-center overflow-hidden px-6">
         <div className="absolute inset-0 surface-grid opacity-70" />
-        <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-cyan-400/10 blur-3xl rounded-full animate-glow" />
+        <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-primary/10 blur-3xl rounded-full animate-glow" />
         <div
-          className="absolute -bottom-24 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-violet-500/10 blur-3xl rounded-full animate-glow"
+          className="absolute -bottom-24 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-primary/6 blur-3xl rounded-full animate-glow"
           style={{ animationDelay: "1.2s" }}
         />
 
         <div className="relative w-full max-w-2xl text-center">
           <div className="inline-flex items-center justify-center mb-6">
-            <div className="w-12 h-12 rounded-2xl bg-white/95 flex items-center justify-center shadow-sm shadow-cyan-500/10 overflow-hidden">
-              <Image src="/kogo-logo.svg" alt="KogoPAY" width={48} height={48} priority />
+            <div className="w-12 h-12 rounded-2xl flex items-center justify-center shadow-sm shadow-primary/10 overflow-hidden">
+              <Image src="/kogo-logo.png" alt="KogoPAY" width={48} height={48} priority />
             </div>
           </div>
 
@@ -34,7 +34,7 @@ export default function KogoPayPage() {
           </p>
 
           <div className="mt-10 flex items-center justify-center gap-2 text-sm text-muted-foreground">
-            <span className="inline-block w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
+            <span className="inline-block w-2 h-2 rounded-full bg-primary animate-pulse" />
             <span>Coming soon</span>
           </div>
         </div>

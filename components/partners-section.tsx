@@ -37,7 +37,7 @@ export function PartnersSection() {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
           {partners.map((partner, index) => (
             <ScrollReveal key={index} delayMs={Math.min(index * 60, 240)}>
-              <div className="group flex items-center justify-center p-6 lg:p-8 rounded-2xl bg-card border border-border hover:border-cyan-400/30 transition-all duration-300">
+              <div className="group flex items-center justify-center p-6 lg:p-8 rounded-2xl bg-card border border-border hover:border-primary/30 transition-all duration-300">
                 <div className="text-center">
                   <div className="w-full px-1">
                     <Wordmark text={partner.logo} />

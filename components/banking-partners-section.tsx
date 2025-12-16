@@ -27,7 +27,7 @@ export function BankingPartnersSection() {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
           {bankingPartners.map((partner, index) => (
             <ScrollReveal key={index} delayMs={Math.min(index * 60, 240)}>
-              <div className="group flex items-center justify-center p-6 lg:p-8 rounded-2xl bg-card border border-border hover:border-cyan-400/30 transition-all duration-300">
+              <div className="group flex items-center justify-center p-6 lg:p-8 rounded-2xl bg-card border border-border hover:border-primary/30 transition-all duration-300">
                 <div className="text-center">
                   <div className="w-16 h-16 mx-auto mb-3 rounded-xl bg-gradient-to-br from-slate-800 to-slate-950 flex items-center justify-center border border-white/10">
                     <span className="text-lg font-bold text-white/90">{partner.logo}</span>

@@ -7,9 +7,9 @@ export function HeroSection() {
     <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl animate-glow" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-glow" />
         <div
-          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-violet-500/10 rounded-full blur-3xl animate-glow"
+          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/6 rounded-full blur-3xl animate-glow"
           style={{ animationDelay: "1.5s" }}
         />
         <div className="absolute inset-0 surface-grid opacity-60" />
@@ -21,7 +21,7 @@ export function HeroSection() {
           <div className="text-center lg:text-left">
             <ScrollReveal>
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/60 border border-border mb-6">
-                <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
+                <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
                 <span className="text-sm text-muted-foreground">Spend globally with a card built for everyday crypto</span>
               </div>
             </ScrollReveal>
@@ -43,7 +43,7 @@ export function HeroSection() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-cyan-400 to-blue-600 hover:from-cyan-300 hover:to-blue-500 text-white px-8 py-6 text-lg"
+                  className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-6 text-lg"
                 >
                   Get Your KogoX Crypto Card
                   <ArrowRight className="w-5 h-5 ml-2" />
@@ -55,15 +55,15 @@ export function HeroSection() {
             <ScrollReveal delayMs={260}>
               <div className="flex flex-wrap gap-6 justify-center lg:justify-start text-sm text-muted-foreground">
                 <div className="flex items-center gap-2">
-                  <Globe className="w-4 h-4 text-cyan-400" />
+                  <Globe className="w-4 h-4 text-primary" />
                   <span>Global acceptance</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Zap className="w-4 h-4 text-cyan-400" />
+                  <Zap className="w-4 h-4 text-primary" />
                   <span>Seamless payments</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Shield className="w-4 h-4 text-cyan-400" />
+                  <Shield className="w-4 h-4 text-primary" />
                   <span>Security-first controls</span>
                 </div>
               </div>
@@ -74,14 +74,14 @@ export function HeroSection() {
           <div className="relative flex justify-center lg:justify-end">
             <div className="relative animate-float">
               {/* Glow Effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/25 via-blue-500/20 to-violet-500/20 rounded-3xl blur-2xl scale-110" />
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/25 via-primary/15 to-[#8a6b1f]/20 rounded-3xl blur-2xl scale-110" />
 
               {/* Card */}
               <div className="relative w-80 md:w-96 aspect-[1.586/1] rounded-2xl bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 border border-white/10 shadow-2xl p-6 overflow-hidden">
                 {/* Card Pattern */}
                 <div className="absolute inset-0 opacity-20">
-                  <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-cyan-400/35 rounded-full blur-xl -translate-y-1/2 translate-x-1/2" />
-                  <div className="absolute bottom-0 left-0 w-72 h-72 bg-gradient-to-tr from-violet-500/25 rounded-full blur-xl translate-y-1/2 -translate-x-1/2" />
+                  <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-primary/35 rounded-full blur-xl -translate-y-1/2 translate-x-1/2" />
+                  <div className="absolute bottom-0 left-0 w-72 h-72 bg-gradient-to-tr from-[#8a6b1f]/25 rounded-full blur-xl translate-y-1/2 -translate-x-1/2" />
                 </div>
 
                 {/* Card Content */}
@@ -115,7 +115,7 @@ export function HeroSection() {
                 className="absolute -top-4 -right-4 w-16 h-16 rounded-xl bg-card border border-border p-3 shadow-xl"
                 style={{ animationDelay: "0.5s" }}
               >
-                <div className="w-full h-full rounded-lg bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center">
+                <div className="w-full h-full rounded-lg bg-gradient-to-br from-primary to-[#8a6b1f] flex items-center justify-center">
                   <span className="text-white font-bold text-xs">PAY</span>
                 </div>
               </div>
@@ -123,7 +123,7 @@ export function HeroSection() {
                 className="absolute -bottom-4 -left-4 w-16 h-16 rounded-xl bg-card border border-border p-3 shadow-xl"
                 style={{ animationDelay: "1s" }}
               >
-                <div className="w-full h-full rounded-lg bg-gradient-to-br from-violet-500 to-blue-700 flex items-center justify-center">
+                <div className="w-full h-full rounded-lg bg-gradient-to-br from-[#8a6b1f] to-primary flex items-center justify-center">
                   <span className="text-white font-bold text-xs">CARD</span>
                 </div>
               </div>
