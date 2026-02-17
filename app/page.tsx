@@ -4,7 +4,6 @@ import { FeaturesSection } from "@/components/features-section"
 import { MobileAppSection } from "@/components/mobile-app-section"
 import { SecuritySection } from "@/components/security-section"
 import { PartnersSection } from "@/components/partners-section"
-import { BankingPartnersSection } from "@/components/banking-partners"
 import { CTASection } from "@/components/cta-section"
 import { Footer } from "@/components/footer"
 
@@ -17,7 +16,6 @@ export default function Home() {
       <MobileAppSection />
       <SecuritySection />
       <PartnersSection />
-      <BankingPartnersSection />
       <CTASection />
       <Footer />
     </main>

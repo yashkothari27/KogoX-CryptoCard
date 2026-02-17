@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { ScrollReveal } from "@/components/scroll-reveal"
+import Link from "next/link"
 
 export function CTASection() {
   return (
@@ -27,18 +28,24 @@ export function CTASection() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
+              asChild
               size="lg"
               className="bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-6 text-lg"
             >
-              Apply Now
-              <ArrowRight className="w-5 h-5 ml-2" />
+              <Link href="/coming-soon">
+                Apply Now
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Link>
             </Button>
             <Button
+              asChild
               size="lg"
               variant="outline"
               className="border-border text-foreground hover:bg-secondary px-10 py-6 text-lg bg-transparent"
             >
-              Contact Support
+              <Link href="/coming-soon">
+                Contact Support
+              </Link>
             </Button>
           </div>
 

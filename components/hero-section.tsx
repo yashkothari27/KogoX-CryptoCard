@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Globe, Zap, Shield } from "lucide-react"
 import { ScrollReveal } from "@/components/scroll-reveal"
+import Link from "next/link"
 
 export function HeroSection() {
   return (
@@ -42,11 +43,14 @@ export function HeroSection() {
             <ScrollReveal delayMs={200}>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
                 <Button
+                  asChild
                   size="lg"
                   className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-6 text-lg"
                 >
-                  Get Your KogoX Crypto Card
-                  <ArrowRight className="w-5 h-5 ml-2" />
+                  <Link href="/coming-soon">
+                    Get Your KogoX Crypto Card
+                    <ArrowRight className="w-5 h-5 ml-2" />
+                  </Link>
                 </Button>
               </div>
             </ScrollReveal>
@@ -77,35 +81,56 @@ export function HeroSection() {
               <div className="absolute inset-0 bg-gradient-to-r from-primary/25 via-primary/15 to-[#8a6b1f]/20 rounded-3xl blur-2xl scale-110" />
 
               {/* Card */}
-              <div className="relative w-80 md:w-96 aspect-[1.586/1] rounded-2xl bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 border border-white/10 shadow-2xl p-6 overflow-hidden">
-                {/* Card Pattern */}
-                <div className="absolute inset-0 opacity-20">
-                  <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-primary/35 rounded-full blur-xl -translate-y-1/2 translate-x-1/2" />
-                  <div className="absolute bottom-0 left-0 w-72 h-72 bg-gradient-to-tr from-[#8a6b1f]/25 rounded-full blur-xl translate-y-1/2 -translate-x-1/2" />
-                </div>
+              <div className="relative w-80 md:w-96 aspect-[1.586/1] rounded-2xl bg-black border border-white/5 shadow-2xl p-6 overflow-hidden flex flex-col justify-between">
+                {/* Subtle sheen */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-white/5 via-transparent to-white/5 pointer-events-none" />
 
-                {/* Card Content */}
-                <div className="relative h-full flex flex-col justify-between">
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <span className="text-white/80 text-xs">KogoX Crypto Card</span>
-                      <div className="text-white font-bold text-lg tracking-wide">KogoX</div>
+                {/* Card Top: Chip and Contactless */}
+                <div className="flex justify-between items-start relative z-10">
+                  {/* EMV Chip */}
+                  <div className="w-12 h-9 rounded-md bg-gradient-to-br from-yellow-200 via-yellow-400 to-yellow-600 relative overflow-hidden shadow-inner border border-black/10">
+                    <div className="absolute inset-0 grid grid-cols-3 grid-rows-4 gap-0.5 p-0.5 opacity-40">
+                      {[...Array(12)].map((_, i) => (
+                        <div key={i} className="border border-black/20" />
+                      ))}
                     </div>
-                    <div className="w-12 h-8 bg-gradient-to-r from-slate-200 to-slate-400 rounded" />
                   </div>
 
-                  <div className="space-y-4">
-                    <div className="text-white/90 font-mono text-lg tracking-wider">•••• •••• •••• 4829</div>
-                    <div className="flex justify-between items-end">
-                      <div>
-                        <div className="text-white/60 text-xs">Card Holder</div>
-                        <div className="text-white text-sm">JOHN DOE</div>
-                      </div>
-                      <div className="flex gap-1">
-                        <div className="w-8 h-8 rounded-full bg-slate-200/90" />
-                        <div className="w-8 h-8 rounded-full bg-slate-500/70 -ml-3" />
-                      </div>
-                    </div>
+                  {/* Contactless Icon */}
+                  <div className="text-white/80">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="rotate-90"
+                    >
+                      <path d="M5 8a10 10 0 0 1 0 8" />
+                      <path d="M9 10a6 6 0 0 1 0 4" />
+                      <path d="M13 12a2 2 0 0 1 0 2" />
+                    </svg>
+                  </div>
+                </div>
+
+                {/* Card Center: Kogo Flower Logo */}
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                  <div className="w-32 h-32 relative opacity-90">
+                    <img
+                      src="/kogo-flower.png"
+                      alt="Kogo Flower"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                </div>
+
+                {/* Card Bottom: Visa Logo */}
+                <div className="flex justify-end items-end relative z-10">
+                  <div className="text-white font-bold italic text-3xl tracking-tighter">
+                    VISA
                   </div>
                 </div>
               </div>

@@ -4,6 +4,7 @@ import { useState } from "react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import Link from "next/link"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -24,24 +25,26 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="/coming-soon" className="text-muted-foreground hover:text-foreground transition-colors">
               Features
-            </a>
-            <a href="#app" className="text-muted-foreground hover:text-foreground transition-colors">
+            </Link>
+            <Link href="/coming-soon" className="text-muted-foreground hover:text-foreground transition-colors">
               App
-            </a>
-            <a href="#security" className="text-muted-foreground hover:text-foreground transition-colors">
+            </Link>
+            <Link href="/coming-soon" className="text-muted-foreground hover:text-foreground transition-colors">
               Security
-            </a>
-            <a href="#partners" className="text-muted-foreground hover:text-foreground transition-colors">
+            </Link>
+            <Link href="/coming-soon" className="text-muted-foreground hover:text-foreground transition-colors">
               Partners
-            </a>
+            </Link>
           </nav>
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 px-6">
-              Get Your KogoX Crypto Card
+            <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90 px-6">
+              <Link href="/coming-soon">
+                Get Your KogoX Crypto Card
+              </Link>
             </Button>
           </div>
 
@@ -59,20 +62,22 @@ export function Header() {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-border">
             <nav className="flex flex-col gap-4">
-              <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="/coming-soon" className="text-muted-foreground hover:text-foreground transition-colors">
                 Features
-              </a>
-              <a href="#app" className="text-muted-foreground hover:text-foreground transition-colors">
+              </Link>
+              <Link href="/coming-soon" className="text-muted-foreground hover:text-foreground transition-colors">
                 App
-              </a>
-              <a href="#security" className="text-muted-foreground hover:text-foreground transition-colors">
+              </Link>
+              <Link href="/coming-soon" className="text-muted-foreground hover:text-foreground transition-colors">
                 Security
-              </a>
-              <a href="#partners" className="text-muted-foreground hover:text-foreground transition-colors">
+              </Link>
+              <Link href="/coming-soon" className="text-muted-foreground hover:text-foreground transition-colors">
                 Partners
-              </a>
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 w-full mt-2">
-                Get Your KogoX Crypto Card
+              </Link>
+              <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90 w-full mt-2">
+                <Link href="/coming-soon">
+                  Get Your KogoX Crypto Card
+                </Link>
               </Button>
             </nav>
           </div>
