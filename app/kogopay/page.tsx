@@ -19,8 +19,8 @@ export default function KogoPayPage() {
 
         <div className="relative w-full max-w-2xl text-center">
           <div className="inline-flex items-center justify-center mb-6">
-            <div className="w-12 h-12 rounded-2xl flex items-center justify-center shadow-sm shadow-primary/10 overflow-hidden">
-              <Image src="/kogo-logo.png" alt="KogoPAY" width={48} height={48} priority />
+            <div className="w-12 h-12 flex items-center justify-center overflow-hidden">
+              <Image src="/kogo-logo-gold.svg" alt="KogoPAY" width={48} height={48} priority />
             </div>
           </div>
 

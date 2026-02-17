@@ -25,7 +25,7 @@ export default function ComingSoonPage() {
                         <div className="absolute inset-0 bg-primary/20 blur-2xl rounded-full scale-110 group-hover:scale-125 transition-transform duration-500" />
                         <div className="relative w-32 h-32 md:w-40 md:h-40 animate-float">
                             <Image
-                                src="/kogo-flower.png"
+                                src="/kogo-logo-gold.svg"
                                 alt="KogoX Flower"
                                 fill
                                 className="object-contain drop-shadow-[0_0_15px_rgba(234,179,8,0.3)]"

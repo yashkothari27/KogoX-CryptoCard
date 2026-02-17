@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, Globe, Zap, Shield } from "lucide-react"
 import { ScrollReveal } from "@/components/scroll-reveal"
 import Link from "next/link"
+import Image from "next/image"
 
 export function HeroSection() {
   return (
@@ -81,75 +82,31 @@ export function HeroSection() {
               <div className="absolute inset-0 bg-gradient-to-r from-primary/25 via-primary/15 to-[#8a6b1f]/20 rounded-3xl blur-2xl scale-110" />
 
               {/* Card */}
-              <div className="relative w-80 md:w-96 aspect-[1.586/1] rounded-2xl bg-black border border-white/5 shadow-2xl p-6 overflow-hidden flex flex-col justify-between">
-                {/* Subtle sheen */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-white/5 via-transparent to-white/5 pointer-events-none" />
-
-                {/* Card Top: Chip and Contactless */}
-                <div className="flex justify-between items-start relative z-10">
-                  {/* EMV Chip */}
-                  <div className="w-12 h-9 rounded-md bg-gradient-to-br from-yellow-200 via-yellow-400 to-yellow-600 relative overflow-hidden shadow-inner border border-black/10">
-                    <div className="absolute inset-0 grid grid-cols-3 grid-rows-4 gap-0.5 p-0.5 opacity-40">
-                      {[...Array(12)].map((_, i) => (
-                        <div key={i} className="border border-black/20" />
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Contactless Icon */}
-                  <div className="text-white/80">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="rotate-90"
-                    >
-                      <path d="M5 8a10 10 0 0 1 0 8" />
-                      <path d="M9 10a6 6 0 0 1 0 4" />
-                      <path d="M13 12a2 2 0 0 1 0 2" />
-                    </svg>
-                  </div>
-                </div>
-
-                {/* Card Center: Kogo Flower Logo */}
-                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                  <div className="w-32 h-32 relative opacity-90">
-                    <img
-                      src="/kogo-flower.png"
-                      alt="Kogo Flower"
-                      className="w-full h-full object-contain"
-                    />
-                  </div>
-                </div>
-
-                {/* Card Bottom: Visa Logo */}
-                <div className="flex justify-end items-end relative z-10">
-                  <div className="text-white font-bold italic text-3xl tracking-tighter">
-                    VISA
-                  </div>
-                </div>
+              <div className="relative w-80 md:w-[28rem] aspect-[1.586/1] rounded-2xl overflow-hidden border border-white/10 shadow-2xl transition-transform duration-500 hover:scale-[1.02]">
+                <Image
+                  src="/KogoX Prepaid Visa card.png"
+                  alt="KogoX Prepaid Visa Card"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
 
-              {/* Floating Elements */}
+              {/* Floating Elements (Keeping these for extra flair if they look good, or removing if they clash) */}
               <div
-                className="absolute -top-4 -right-4 w-16 h-16 rounded-xl bg-card border border-border p-3 shadow-xl"
+                className="absolute -top-4 -right-4 w-12 h-12 md:w-16 md:h-16 rounded-xl bg-card border border-border p-2 md:p-3 shadow-xl z-20"
                 style={{ animationDelay: "0.5s" }}
               >
                 <div className="w-full h-full rounded-lg bg-gradient-to-br from-primary to-[#8a6b1f] flex items-center justify-center">
-                  <span className="text-white font-bold text-xs">PAY</span>
+                  <span className="text-white font-bold text-[10px] md:text-xs">PAY</span>
                 </div>
               </div>
               <div
-                className="absolute -bottom-4 -left-4 w-16 h-16 rounded-xl bg-card border border-border p-3 shadow-xl"
+                className="absolute -bottom-4 -left-4 w-12 h-12 md:w-16 md:h-16 rounded-xl bg-card border border-border p-2 md:p-3 shadow-xl z-20"
                 style={{ animationDelay: "1s" }}
               >
                 <div className="w-full h-full rounded-lg bg-gradient-to-br from-[#8a6b1f] to-primary flex items-center justify-center">
-                  <span className="text-white font-bold text-xs">CARD</span>
+                  <span className="text-white font-bold text-[10px] md:text-xs">CARD</span>
                 </div>
               </div>
             </div>

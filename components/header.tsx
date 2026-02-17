@@ -15,8 +15,8 @@ export function Header() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl flex items-center justify-center shadow-sm shadow-primary/10 overflow-hidden">
-              <Image src="/kogo-logo.png" alt="KogoX" width={40} height={40} priority />
+            <div className="w-10 h-10 flex items-center justify-center overflow-hidden">
+              <Image src="/kogo-logo-gold.svg" alt="KogoX" width={40} height={40} priority />
             </div>
             <span className="text-xl font-bold text-foreground">
               Kogo<span className="gradient-text">X</span>

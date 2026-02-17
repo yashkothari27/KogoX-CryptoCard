@@ -1,0 +1,22 @@
+<svg width="722" height="722" viewBox="0 0 722 722" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5E48E" />
+      <stop offset="20%" stop-color="#E1B44E" />
+      <stop offset="50%" stop-color="#C5A059" />
+      <stop offset="80%" stop-color="#A67C00" />
+      <stop offset="100%" stop-color="#7B5C00" />
+    </linearGradient>
+  </defs>
+  <path d="M361.368 328.866C361.368 328.866 177.679 145.703 307.805 41.9595L361.368 102.954V328.866Z" fill="url(#gold-gradient)"/>
+  <path d="M361.364 328.866C361.364 328.866 545.062 145.703 414.926 41.9595L361.364 102.954V328.866Z" fill="url(#gold-gradient)"/>
+  <path d="M392.387 360.88C392.387 360.88 490.763 123.785 641.139 197.4L605.299 269.599L392.387 360.88Z" fill="url(#gold-gradient)"/>
+  <path d="M392.387 360.897C392.387 360.897 639.25 449.909 684.413 292.464L605.289 269.592L392.387 360.897Z" fill="url(#gold-gradient)"/>
+  <path d="M330.616 360.88C330.616 360.88 232.239 123.785 81.8408 197.4L117.69 269.599L330.616 360.88Z" fill="url(#gold-gradient)"/>
+  <path d="M330.616 360.897C330.616 360.897 83.7539 449.938 38.583 292.464L117.706 269.592L330.616 360.897Z" fill="url(#gold-gradient)"/>
+  <path d="M387.501 386.349C387.501 386.349 647.023 429.833 604.495 588.001L524.247 569.165L387.501 386.349Z" fill="url(#gold-gradient)"/>
+  <path d="M387.498 386.349C387.498 386.349 349.717 639.306 517.84 649.045L524.247 569.165L387.498 386.349Z" fill="url(#gold-gradient)"/>
+  <path d="M340.22 386.349C340.22 386.349 80.6962 429.833 123.226 588.001L203.473 569.165L340.22 386.349Z" fill="url(#gold-gradient)"/>
+  <path d="M340.219 386.349C340.219 386.349 378.001 639.306 209.876 649.045L203.471 569.165L340.219 386.349Z" fill="url(#gold-gradient)"/>
+  <circle cx="361" cy="365" r="15" fill="url(#gold-gradient)" />
+</svg>

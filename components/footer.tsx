@@ -9,8 +9,8 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-xl flex items-center justify-center overflow-hidden">
-                <Image src="/kogo-logo.png" alt="KogoX" width={40} height={40} />
+              <div className="w-10 h-10 flex items-center justify-center overflow-hidden">
+                <Image src="/kogo-logo-gold.svg" alt="KogoX" width={40} height={40} />
               </div>
               <span className="text-xl font-bold text-foreground">
                 Kogo<span className="gradient-text">X</span>
